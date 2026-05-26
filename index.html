@@ -4,6 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Ashwin Vinod Kumar</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
 <style>
   :root{
     --bg:#08090a;
@@ -63,7 +64,11 @@
   }
   .rail .mark{
     font-weight:700;font-size:12px;letter-spacing:0.04em;
+    cursor:pointer;
+    transition:opacity .25s ease;
   }
+  .rail .mark:hover{opacity:.7;}
+  .rail .mark::after{display:none;}
   .rail .vert{
     writing-mode:vertical-rl;transform:rotate(180deg);
     font-size:10px;letter-spacing:0.35em;text-transform:uppercase;color:var(--mute);
@@ -74,6 +79,8 @@
   .page{padding-left:56px;}
   .wrap{padding-left:48px;padding-right:48px;}
   @media (max-width:780px){
+    html{scroll-snap-type:none;}
+    .hero,section.s,.contact{scroll-snap-align:none;scroll-snap-stop:normal;}
     .rail{width:40px;}
     .page{padding-left:40px;}
     .wrap{padding-left:20px;padding-right:20px;}
@@ -282,7 +289,10 @@
     scroll-snap-stop:always;
     overflow:hidden;
   }
-  @media (max-width:780px){section.s{padding:80px 20px 0;height:auto;min-height:100vh;}}
+  @media (max-width:780px){
+    section.s{padding:80px 20px 48px;height:auto;min-height:100vh;overflow:visible;}
+    section.s .s-body{overflow:visible;flex:0 0 auto;justify-content:flex-start;min-height:auto;}
+  }
   .s-head{
     display:grid;grid-template-columns:120px 1fr;gap:48px;
     align-items:start;
@@ -394,7 +404,7 @@
     background:var(--line);
     border:1px solid var(--line);
   }
-  .proj{
+  a.proj{
     background:var(--bg);
     padding:22px 22px 20px;
     position:relative;
@@ -402,7 +412,10 @@
     display:flex;flex-direction:column;justify-content:space-between;
     transition:background .35s ease;
     overflow:hidden;
+    text-decoration:none;
+    color:inherit;
   }
+  a.proj:focus-visible{outline:1px solid var(--fg-2);outline-offset:2px;}
   .proj.span-4{grid-column:span 4;}
   .proj.span-3{grid-column:span 3;}
   .proj.span-2{grid-column:span 2;}
@@ -467,6 +480,11 @@
   @media (max-width:560px){
     .proj-grid{grid-template-columns:1fr;}
     .proj.span-4,.proj.span-3,.proj.span-2,.proj.span-6,.feat{grid-column:span 1;}
+  }
+  @media (max-width:780px){
+    #projects .s-body{padding-bottom:8px;}
+    #projects .proj-grid{width:100%;}
+    #projects .proj{min-height:160px;}
   }
 
   /* SKILLS — typographic */
@@ -572,7 +590,7 @@
 
 <!-- LEFT RAIL -->
 <aside class="rail">
-  <div class="mark">AVK</div>
+  <a class="mark u" href="#top" aria-label="Back to top">AVK</a>
   <div class="vert">Ashwin Vinod Kumar</div>
   <div class="dot"></div>
 </aside>
@@ -590,7 +608,7 @@
 <div class="page">
 
   <!-- HERO -->
-  <header class="hero" data-screen-label="01 Hero">
+  <header class="hero" id="top" data-screen-label="01 Hero">
     <div class="canvas-wrap"><canvas id="abstract"></canvas></div>
     <div class="hero-lockup" aria-hidden="true">AVK</div>
     <div class="hero-content">
@@ -718,53 +736,53 @@
     <div class="s-body">
     <div class="proj-grid">
 
-      <div class="proj span-2">
+      <a class="proj span-2" href="https://github.com/ashvk336/HoloHands-Gaming" target="_blank" rel="noopener noreferrer" aria-label="HoloHands Controller on GitHub">
         <div class="ix">N° 001</div>
         <div class="tag">Computer Vision</div>
         <h3>HoloHands <span class="it">Controller.</span></h3>
         <p>Real-time gesture classification with MediaPipe. Spatial input pipeline for touchless game control — used to play videogames with dance moves.</p>
         <div class="foot"><span class="stack">Python · MediaPipe</span><span class="arrow">↗</span></div>
-      </div>
+      </a>
 
-      <div class="proj span-2">
+      <a class="proj span-2" href="https://github.com/ashvk336/Election-software" target="_blank" rel="noopener noreferrer" aria-label="Election Software on GitHub">
         <div class="ix">N° 002</div>
         <div class="tag">Systems</div>
         <h3>Election <span class="it">Software.</span></h3>
         <p>LAN-based vote-processing system designed for scalable, real-time election workflows.</p>
         <div class="foot"><span class="stack">HTML · Python</span><span class="arrow">↗</span></div>
-      </div>
+      </a>
 
-      <div class="proj span-2">
+      <a class="proj span-2" href="https://github.com/ashvk336/Physics-Sim" target="_blank" rel="noopener noreferrer" aria-label="Physics Sim on GitHub">
         <div class="ix">N° 003</div>
         <div class="tag">Simulation</div>
         <h3>Physics <span class="it">Sim.</span></h3>
         <p>JavaScript simulation of electrostatic and gravitational interaction between massive charged bodies.</p>
         <div class="foot"><span class="stack">JavaScript · Canvas</span><span class="arrow">↗</span></div>
-      </div>
+      </a>
 
-      <div class="proj span-2">
+      <a class="proj span-2" href="https://github.com/ashvk336/Encryption-Protocols" target="_blank" rel="noopener noreferrer" aria-label="Encryption Protocols on GitHub">
         <div class="ix">N° 004</div>
         <div class="tag">Cryptography</div>
         <h3>Encryption <span class="it">Protocols.</span></h3>
         <p>Three encryption protocols implemented from spec — exercise in primitives and key exchange.</p>
         <div class="foot"><span class="stack">Python</span><span class="arrow">↗</span></div>
-      </div>
+      </a>
 
-      <div class="proj span-2">
+      <a class="proj span-2" href="https://github.com/ashvk336/Magikarp-Jump" target="_blank" rel="noopener noreferrer" aria-label="Magikarp Jump on GitHub">
         <div class="ix">N° 005</div>
         <div class="tag">Game</div>
         <h3>Magikarp <span class="it">Jump.</span></h3>
         <p>Play as a Magikarp swimming the ocean, dodging plastic straws — a small built-for-fun game.</p>
         <div class="foot"><span class="stack">Python</span><span class="arrow">↗</span></div>
-      </div>
+      </a>
 
-      <div class="proj span-2">
+      <a class="proj span-2" href="https://github.com/ashvk336/Competitive-Programming-Problems" target="_blank" rel="noopener noreferrer" aria-label="Competitive Programming on GitHub">
         <div class="ix">N° 006</div>
         <div class="tag">Algorithms</div>
         <h3>Competitive <span class="it">Programming.</span></h3>
         <p>An ongoing log of contest problems solved across data structures, graph algorithms, and number theory.</p>
         <div class="foot"><span class="stack">C++</span><span class="arrow">↗</span></div>
-      </div>
+      </a>
 
     </div>
     </div>
