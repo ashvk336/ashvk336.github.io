@@ -346,8 +346,6 @@
   .s-foot .progress i.on{background:var(--fg);}
   .s-foot .nxt{display:inline-flex;align-items:center;gap:10px;color:var(--fg-2);}
   .s-foot .nxt:hover{color:var(--fg);}
-  .s-foot .nxt .arr{display:inline-block;width:24px;height:1px;background:currentColor;position:relative;}
-  .s-foot .nxt .arr::after{content:"";position:absolute;right:0;top:-3px;width:7px;height:7px;border-right:1px solid currentColor;border-top:1px solid currentColor;transform:rotate(45deg);}
   @media (max-width:780px){.s-foot{grid-template-columns:1fr auto;gap:12px;}.s-foot .caption,.s-foot .progress{display:none;}}
 
   /* ABOUT */
@@ -435,18 +433,10 @@
   }
   .proj h3 .it{font-style:italic;font-weight:400;color:var(--fg-2);}
   .proj p{margin-top:10px;font-size:13px;color:var(--fg-2);line-height:1.5;max-width:42ch;}
-  .proj .foot{
-    margin-top:16px;display:flex;justify-content:space-between;align-items:end;gap:12px;
-  }
+  .proj .foot{margin-top:16px;}
   .proj .stack{font-size:10px;letter-spacing:0.24em;text-transform:uppercase;color:var(--mute);}
-  .proj .arrow{
-    width:32px;height:32px;border:1px solid var(--line-2);
-    display:flex;align-items:center;justify-content:center;
-    transition:background .25s ease,color .25s ease,border-color .25s ease;
-  }
-  .proj:hover .arrow{background:var(--fg);color:var(--bg);border-color:var(--fg);}
 
-  /* featured project — embed motif */
+  /* featured project. Embed motif */
   .feat{
     grid-column:span 6;
     background:var(--bg-1);
@@ -487,7 +477,7 @@
     #projects .proj{min-height:160px;}
   }
 
-  /* SKILLS — typographic */
+  /* SKILLS. Typographic */
   .skills{
     display:grid;grid-template-columns:120px 1fr;gap:48px;
   }
@@ -613,7 +603,7 @@
     <div class="hero-lockup" aria-hidden="true">AVK</div>
     <div class="hero-content">
       <div>
-        <div class="eyebrow"><span class="num">N° 001</span><span>Index — Personal</span></div>
+        <div class="eyebrow"><span class="num">N° 001</span><span>Index. Personal.</span></div>
         <h1 class="name">Ashwin<br/>Vinod<br/>Kumar.</h1>
       </div>
       <div>
@@ -623,11 +613,11 @@
         <div class="meta-grid">
           <div class="cell"><div class="k">Based</div><div class="v">Cambridge, MA / Chennai, India*</div></div>
           <div class="cell"><div class="k">Class of</div><div class="v">A.B. 2028, Harvard</div></div>
-          <div class="cell"><div class="k">Building</div><div class="v"><a class="u" href="https://www.haurlan.com/" target="_blank" rel="noopener">haurlan.com&nbsp;↗</a></div></div>
+          <div class="cell"><div class="k">Building</div><div class="v"><a class="u" href="https://www.haurlan.com/" target="_blank" rel="noopener">haurlan.com</a></div></div>
         </div>
       </div>
     </div>
-    <a class="scroll-hint" href="#work"><span class="line"></span> Scroll — 01 / 05</a>
+    <a class="scroll-hint" href="#work"><span class="line"></span> Scroll. 01 / 05</a>
     <div class="hero-serial">
       <span class="hs-hide"></span>
       <span class="hs-hide"></span>
@@ -640,7 +630,7 @@
     <div class="s-numeral" aria-hidden="true">02</div>
     <div class="divider-mini"><i class="on"></i><i></i><i></i></div>
     <div class="s-head">
-      <div class="idx">§ 02 — Experience</div>
+      <div class="idx">§ 02. Experience</div>
       <h2>Selected <span class="it">work.</span></h2>
     </div>
     <div class="s-body">
@@ -649,23 +639,23 @@
       <div class="col-r">
 
         <div class="row-item">
-          <div class="yr">2026 — Now</div>
+          <div class="yr">2026. Now</div>
           <div class="ti">Haurlan<span class="role">Co-Founder &amp; CEO</span></div>
-          <div class="desc">Building a derivatives platform for prediction markets — the first options layer on event outcomes. Hedging, leverage, and a real way to trade volatility on questions stuck on binary YES/NO.</div>
+          <div class="desc">Derivatives platform for prediction markets. First options layer on event outcomes, with hedging and leverage beyond binary YES/NO.</div>
           <div class="place">Remote</div>
         </div>
 
         <div class="row-item">
           <div class="yr">2025</div>
           <div class="ti">HTC Global Services<span class="role">Software Engineering Intern</span></div>
-          <div class="desc">Wrote PyTorch + FFmpeg pipelines for multimodal alignment in avatar animation. Built a GPU-optimised prototype tying TTS, lip-sync and compositing — 30% faster generation. Benchmarked sync accuracy across GPU/VRAM profiles.</div>
+          <div class="desc">PyTorch + FFmpeg pipelines for avatar lip-sync and compositing. GPU prototype cut generation time 30%.</div>
           <div class="place">Troy, MI</div>
         </div>
 
         <div class="row-item">
-          <div class="yr">2022 — 23</div>
+          <div class="yr">2022. 23</div>
           <div class="ti">Eigengray Studios<span class="role">AI / ML Intern</span></div>
-          <div class="desc">Designed a method for temporally-coherent character video using ControlNet + Stable Diffusion. Integrated generative models into animation pipelines, cutting storyboard iteration time &gt;40%.</div>
+          <div class="desc">ControlNet + Stable Diffusion for temporally coherent character video. Cut storyboard iteration time by 40%.</div>
           <div class="place">Chennai, IN</div>
         </div>
 
@@ -676,7 +666,7 @@
       <span>§ 02</span>
       <span class="caption"></span>
       <span class="progress"><i class="on"></i><i></i><i></i><i></i></span>
-      <a class="nxt" href="#research">Next — Research <span class="arr"></span></a>
+      <a class="nxt" href="#research">Next. Research</a>
     </div>
   </section>
 
@@ -685,7 +675,7 @@
     <div class="s-numeral" aria-hidden="true">03</div>
     <div class="divider-mini"><i></i><i class="on"></i><i></i></div>
     <div class="s-head">
-      <div class="idx">§ 03 — Research</div>
+      <div class="idx">§ 03. Research</div>
       <h2>Open <span class="it">questions.</span></h2>
     </div>
     <div class="s-body">
@@ -694,23 +684,23 @@
       <div class="col-r">
 
         <div class="row-item">
-          <div class="yr">2026 — Now</div>
-          <div class="ti">Harvard CMSA — Doran Group<span class="role">Researcher · Prof. Charles Doran</span></div>
-          <div class="desc">Working on the link between <em>Adinkras</em> — the bipartite graphs that encode supersymmetry algebras — and error-correcting codes. Studying how their combinatorial structure constrains the codes you can build, and what that can say about supersymmetry.</div>
+          <div class="yr">2026. Now</div>
+          <div class="ti">Harvard CMSA. Doran Group<span class="role">Researcher · Prof. Charles Doran</span></div>
+          <div class="desc">Linking <em>Adinkras</em> to error-correcting codes. Study how their structure constrains code design and supersymmetry.</div>
           <div class="place">Cambridge, MA</div>
         </div>
 
         <div class="row-item">
-          <div class="yr">2024 — Now</div>
-          <div class="ti">Harvard Business School — Blackbox Lab<span class="role">Research Assistant · Prof. James Riley</span></div>
-          <div class="desc">Built a reproducibility pipeline (Python / R) for a Nature study. Modelled how social engagement moves streaming performance for RocNation, and extended Bonacich centrality to predict art-gallery survival 25% more accurately.</div>
+          <div class="yr">2024. Now</div>
+          <div class="ti">Harvard Business School. Blackbox Lab<span class="role">Research Assistant · Prof. James Riley</span></div>
+          <div class="desc">Python/R reproducibility pipeline for a Nature study. Modelled social engagement and streaming for RocNation. Bonacich centrality improved survival prediction by 25%.</div>
           <div class="place">Cambridge, MA</div>
         </div>
 
         <div class="row-item">
           <div class="yr">2023</div>
-          <div class="ti">IIT Madras — RSI India<span class="role">Research Assistant · Prof. Prabha Mandayam</span></div>
-          <div class="desc">One of 50 students selected globally. Simulated quantum key distribution — BB84, B92, EPR — in Qiskit. Parameter sweeps and noise modelling to characterise protocol robustness and key-rate efficiency.</div>
+          <div class="ti">IIT Madras. RSI India<span class="role">Research Assistant · Prof. Prabha Mandayam</span></div>
+          <div class="desc">RSI India selectee. Simulated BB84, B92, and EPR in Qiskit with noise sweeps for robustness and key-rate.</div>
           <div class="place">Chennai, IN</div>
         </div>
 
@@ -721,7 +711,7 @@
       <span>§ 03</span>
       <span class="caption"></span>
       <span class="progress"><i></i><i class="on"></i><i></i><i></i></span>
-      <a class="nxt" href="#projects">Next — Projects <span class="arr"></span></a>
+      <a class="nxt" href="#projects">Next. Projects</a>
     </div>
   </section>
 
@@ -730,7 +720,7 @@
     <div class="s-numeral" aria-hidden="true">04</div>
     <div class="divider-mini"><i></i><i></i><i class="on"></i></div>
     <div class="s-head">
-      <div class="idx">§ 04 — Index of Projects</div>
+      <div class="idx">§ 04. Index of Projects</div>
       <h2>Things I have <span class="it">made.</span></h2>
     </div>
     <div class="s-body">
@@ -740,8 +730,8 @@
         <div class="ix">N° 001</div>
         <div class="tag">Computer Vision</div>
         <h3>HoloHands <span class="it">Controller.</span></h3>
-        <p>Real-time gesture classification with MediaPipe. Spatial input pipeline for touchless game control — used to play videogames with dance moves.</p>
-        <div class="foot"><span class="stack">Python · MediaPipe</span><span class="arrow">↗</span></div>
+        <p>MediaPipe gestures for touchless game control. Play games with dance moves.</p>
+        <div class="foot"><span class="stack">Python · MediaPipe</span></div>
       </a>
 
       <a class="proj span-2" href="https://github.com/ashvk336/Election-software" target="_blank" rel="noopener noreferrer" aria-label="Election Software on GitHub">
@@ -749,7 +739,7 @@
         <div class="tag">Systems</div>
         <h3>Election <span class="it">Software.</span></h3>
         <p>LAN-based vote-processing system designed for scalable, real-time election workflows.</p>
-        <div class="foot"><span class="stack">HTML · Python</span><span class="arrow">↗</span></div>
+        <div class="foot"><span class="stack">HTML · Python</span></div>
       </a>
 
       <a class="proj span-2" href="https://github.com/ashvk336/Physics-Sim" target="_blank" rel="noopener noreferrer" aria-label="Physics Sim on GitHub">
@@ -757,23 +747,23 @@
         <div class="tag">Simulation</div>
         <h3>Physics <span class="it">Sim.</span></h3>
         <p>JavaScript simulation of electrostatic and gravitational interaction between massive charged bodies.</p>
-        <div class="foot"><span class="stack">JavaScript · Canvas</span><span class="arrow">↗</span></div>
+        <div class="foot"><span class="stack">JavaScript · Canvas</span></div>
       </a>
 
       <a class="proj span-2" href="https://github.com/ashvk336/Encryption-Protocols" target="_blank" rel="noopener noreferrer" aria-label="Encryption Protocols on GitHub">
         <div class="ix">N° 004</div>
         <div class="tag">Cryptography</div>
         <h3>Encryption <span class="it">Protocols.</span></h3>
-        <p>Three encryption protocols implemented from spec — exercise in primitives and key exchange.</p>
-        <div class="foot"><span class="stack">Python</span><span class="arrow">↗</span></div>
+        <p>Three encryption protocols implemented from spec. The project is an exercise in primitives and key exchange.</p>
+        <div class="foot"><span class="stack">Python</span></div>
       </a>
 
       <a class="proj span-2" href="https://github.com/ashvk336/Magikarp-Jump" target="_blank" rel="noopener noreferrer" aria-label="Magikarp Jump on GitHub">
         <div class="ix">N° 005</div>
         <div class="tag">Game</div>
         <h3>Magikarp <span class="it">Jump.</span></h3>
-        <p>Play as a Magikarp swimming the ocean, dodging plastic straws — a small built-for-fun game.</p>
-        <div class="foot"><span class="stack">Python</span><span class="arrow">↗</span></div>
+        <p>Play as a Magikarp swimming the ocean, dodging plastic straws. It is a small built-for-fun game.</p>
+        <div class="foot"><span class="stack">Python</span></div>
       </a>
 
       <a class="proj span-2" href="https://github.com/ashvk336/Competitive-Programming-Problems" target="_blank" rel="noopener noreferrer" aria-label="Competitive Programming on GitHub">
@@ -781,7 +771,7 @@
         <div class="tag">Algorithms</div>
         <h3>Competitive <span class="it">Programming.</span></h3>
         <p>An ongoing log of contest problems solved across data structures, graph algorithms, and number theory.</p>
-        <div class="foot"><span class="stack">C++</span><span class="arrow">↗</span></div>
+        <div class="foot"><span class="stack">C++</span></div>
       </a>
 
     </div>
@@ -790,7 +780,7 @@
       <span>§ 04</span>
       <span class="caption"></span>
       <span class="progress"><i></i><i></i><i class="on"></i><i></i></span>
-      <a class="nxt" href="#contact">Next — Contact <span class="arr"></span></a>
+      <a class="nxt" href="#contact">Next. Contact</a>
     </div>
   </section>
 
@@ -799,29 +789,29 @@
     <div class="c-numeral" aria-hidden="true">05</div>
     <div class="c-body">
     <div class="ct-grid">
-      <div class="idx" style="font-size:11px;letter-spacing:0.32em;text-transform:uppercase;color:var(--mute);">§ 05 — Reach</div>
+      <div class="idx" style="font-size:11px;letter-spacing:0.32em;text-transform:uppercase;color:var(--mute);">§ 05. Reach</div>
       <div>
         <h2>
           <a href="mailto:ashwinvinodkumar@gmail.com" class="u">
-            Say <span class="it">hello</span> ↗
+            Say <span class="it">hello</span>
           </a>
         </h2>
         <div class="links">
           <a href="mailto:ashwinvinodkumar@gmail.com">
             <span class="k">Email</span>
-            <span class="v">ashwinvinodkumar@gmail.com</span></span>
+            <span class="v">ashwinvinodkumar@gmail.com</span>
           </a>
           <a href="https://www.linkedin.com/in/ashwinvinodkumar/" target="_blank" rel="noopener">
             <span class="k">LinkedIn</span>
-            <span class="v">in/ashwinvinodkumar ↗</span>
+            <span class="v">in/ashwinvinodkumar</span>
           </a>
           <a href="https://github.com/ashvk336/" target="_blank" rel="noopener">
             <span class="k">GitHub</span>
-            <span class="v">@ashvk336 ↗</span>
+            <span class="v">@ashvk336</span>
           </a>
           <a href="https://x.com/Ashwin_v336" target="_blank" rel="noopener">
             <span class="k">Twitter</span>
-            <span class="v">@Ashwin_v336 ↗</span>
+            <span class="v">@Ashwin_v336</span>
           </a>
         </div>
       </div>
@@ -831,7 +821,7 @@
       <span>§ 05</span>
       <span class="caption"></span>
       <span class="progress"><i></i><i></i><i></i><i class="on"></i></span>
-      <a class="nxt" href="#top">Back to top <span class="arr"></span></a>
+      <a class="nxt" href="#top">Back to top</a>
     </div>
   </section>
 
@@ -852,7 +842,7 @@ document.querySelectorAll('section, .hero-content, .row-item, .proj, .feat').for
 });
 
 /* ============================================================
-   Hero abstract canvas — drifting monochrome point-field with
+   Hero abstract canvas. Drifting monochrome point-field with
    distance-weighted edges + slow rotational flow.
    ============================================================ */
 (function(){
@@ -986,7 +976,7 @@ document.querySelectorAll('section, .hero-content, .row-item, .proj, .feat').for
 })();
 
 /* ============================================================
-   Featured project canvas — slow contour-like topographic motif
+   Featured project canvas. Slow contour-like topographic motif
    ============================================================ */
 (function(){
   const c = document.getElementById('feat-canvas');
